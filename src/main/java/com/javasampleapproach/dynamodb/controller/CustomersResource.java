@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Optional;
 
 
-@RestController
 @RequestMapping("/api")
 @ApiOperation(value = "Customers Data Details")
 public class CustomersResource {
