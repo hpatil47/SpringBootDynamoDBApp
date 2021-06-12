@@ -15,6 +15,12 @@ steps:
     SonarCloud: 'sonar cloud'
     organization: 'harsh-project'
     scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner,
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectKey=harsh-project_harsh-project
+      sonar.projectName=harsh-project
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
